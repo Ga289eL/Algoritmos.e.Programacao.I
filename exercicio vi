@@ -1,0 +1,23 @@
+//Faça um programa que solicita ao usuário dois números inteiros e armazena nas variáveis A e B.
+//a. A seguir (utilizando apenas atribuições entre variáveis) troque os seus conteúdos fazendo com que o valor que está em A passe para B e vice-versa.
+//b. Ao final escreva os valores que ficaram armazenados nas variáveis A e B respectivamente.
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int a,b,c;
+    
+    cout<<"Digite o valor de A: ";
+    cin>>a;
+    
+    cout<<"Digite o valor de B: ";
+    cin>>b;
+    
+    c=a,a=b,b=c;
+    
+    cout<<"Valor de A: "<<a<<endl<<"Valor de B: "<<b;
+    
+    return 0;
+}
