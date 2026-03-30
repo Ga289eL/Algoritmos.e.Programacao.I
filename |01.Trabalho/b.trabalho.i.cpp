@@ -8,60 +8,44 @@
 
 int main() {
     using namespace std;
-    int i, i1, i2, i3, i4, i5, i6, i7, i8, i9, digito, segundoDigito;
+    int i, i1, i2, i3, i4, i5, i6, i7, i8, i9, digito1, digito2;
 
     cout << "Insira um numero de oito ou nove digitos: ";
-    cin >> i;
+    cin >> i; /*Supondo que o CPF comece com 123456789*/
 
-    if (i > 999999 && i <= 999999999) {
-        i1 = i / 100000000;
-        i = i % 100000000;
-        i2 = i / 10000000;
-        i = i % 10000000;
-        i3 = i / 1000000;
-        i = i % 1000000;
-        i4 = i / 100000;
-        i = i % 100000;
-        i5 = i / 10000;
-        i = i % 10000;
-        i6 = i / 1000;
-        i = i % 1000;
-        i7 = i / 100;
-        i = i % 100;
-        i8 = i / 10;
-        i = i % 10;
-        i9 = i / 1;
-        i = i % 1;
+    if (i > 99999 && i <= 999999999) {
+        i9 = i % 10; i /= 10; /*Modulo de 10 seria 9, pois a conta dari 12345678,9. Logo em seguida o "i" é dividido por 10 ficando 12345678*/
+        i8 = i % 10; i /= 10; /*Modulo de 10 seria 8, pois a conta dari 1234567,8. Logo em seguida o "i" é dividido por 10 ficando 1234567*/
+        i7 = i % 10; i /= 10; /*Modulo de 10 seria 7, pois a conta dari 123456,7. Logo em seguida o "i" é dividido por 10 ficando 123456*/
+        i6 = i % 10; i /= 10; /*Modulo de 10 seria 6, pois a conta dari 12345,6. Logo em seguida o "i" é dividido por 10 ficando 12345*/
+        i5 = i % 10; i /= 10; /*Modulo de 10 seria 5, pois a conta dari 1234,5. Logo em seguida o "i" é dividido por 10 ficando 1234*/
+        i4 = i % 10; i /= 10; /*Modulo de 10 seria 4, pois a conta dari 123,4. Logo em seguida o "i" é dividido por 10 ficando 123*/
+        i3 = i % 10; i /= 10; /*Modulo de 10 seria 3, pois a conta dari 12,3. Logo em seguida o "i" é dividido por 10 ficando 12*/
+        i2 = i % 10; i /= 10; /*Modulo de 10 seria 2, pois a conta dari 1,2. Logo em seguida o "i" é dividido por 10 ficando 1*/
+        i1 = i; /*Como so restou 1 entao acaba que as divisoes acabam*/
 
-        primeiroDigito = i1 * 10 + i2 * 9 + i3 * 8 + i4 * 7 + i5 * 6 + i6 * 5 + i7 * 4 + i8 * 3 + i9 * 2;
-        cout << "Primeira equacao: " << primeiroDigito << "\n";
+        digito1 = i1*10 + i2*9 + i3*8 + i4*7 + i5*6 + i6*5 + i7*4 + i8*3 + i9*2;
 
-        if (primeiroDigito % 11 < 2) {
-            primeiroDigito = 0;
+        if (digito1 % 11 < 2) {
+            digito1 = 0;
         } else {
-            primeiroDigito = 11 - (primeiroDigito % 11);
+            digito1 = 11 - (digito1 % 11);
         }
 
-        segundoDigito = i1 * 11 + i2 * 10 + i3 * 9 + i4 * 8 + i5 * 7 + i6 * 6 + i7 * 5 + i8 * 4 + i9 * 3 + primeiroDigito * 2;
-        cout << "Segunda equacao: " << segundoDigito << "\n";
+        digito2 = i1*11 + i2*10 + i3*9 + i4*8 + i5*7 + i6*6 + i7*5 + i8*4 + i9*3 + digito1*2;
 
-        if (segundoDigito % 11 < 2) {
-            segundoDigito = 0;
+        if (digito2 % 11 < 2) {
+            digito2 = 0;
         } else {
-            segundoDigito = 11 - (segundoDigito % 11);
+            digito2 = 11 - (digito2 % 11);
         }
 
-        cout << "O CPF obtido com esses numeros e: " << i1 << i2 << i3 << "." 
-             << i4 << i5 << i6 << "." << i7 << i8 << i9 << "-" 
-             << primeiroDigito << segundoDigito << "\n";
-        
-        return 0;
-
-    } else if (i < 999999) {
-        cout << "Voce inseriu um numero menor, reinicie o programa.\n";
-        return 0;
+        cout << "O CPF obtido com os numeros é: " << i1 << i2 << i3 << "." << i4 << i5 << i6 << "." << i7 << i8 << i9 << "-" << digito1 << digito2 << "\n";
+    } else if (i < 99999) {
+        cout << "Você inseriu um numero menor, reinicie o programa.\n";
     } else {
-        cout << "Voce inseriu um numero maior, reinicie o programa.\n";
-        return 0;
+        cout << "Você inseriu um numero maior, reinicie o programa.\n";
     }
+    
+    return 0;
 }
