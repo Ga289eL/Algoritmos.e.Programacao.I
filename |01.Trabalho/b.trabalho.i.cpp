@@ -40,7 +40,7 @@ int main() {
             digito2 = 11 - (digito2 % 11);
         }
 
-        cout << "O CPF obtido com os numeros é: " << i1 << i2 << i3 << "." << i4 << i5 << i6 << "." << i7 << i8 << i9 << "-" << digito1 << digito2 << "\n";
+        cout << "O CPF obtido com os numeros é: " << i1 << i2 << i3 << "." << i4 << i5 << i6 << "." << i7 << i8 << i9 << "-" << digito1 << digito2;
     } else if (i < 99999) {
         cout << "Você inseriu um numero menor, reinicie o programa.\n";
     } else {
