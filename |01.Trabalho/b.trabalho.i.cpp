@@ -31,21 +31,33 @@ int main() {
     
     digito1 = i1*10 + i2*9 + i3*8 + i4*7 + i5*6 + i6*5 + i7*4 + i8*3 + i9*2;
     
+    cout<<digito1<<endl;
+    
     digito1=digito1%11;
     digito1=11-digito1;
+    
+    cout<<digito1<<endl;
     
     if(digito1<2 || digito1>9){
         digito1=0;
     }
     
+    cout<<digito1<<endl;
+    
     digito2 = i1*11 + i2*10 + i3*9 + i4*8 + i5*7 + i6*6 + i7*5 + i8*4 + i9*3 + digito1*2;
+    
+    cout<<digito2<<endl;
     
     digito2=digito2%11;
     digito2=11-digito2;
     
-    if(digito1<2 || digito1>9){
+    cout<<digito2<<endl;
+    
+    if(digito2<2 || digito2>9){
         digito2=0;
     }
+    
+    cout<<digito1<<endl;
     
     cout << "O CPF obtido com os numeros e: " << i1 << i2 << i3 << "." << i4 << i5 << i6 << "." << i7 << i8 << i9 << "-" << digito1 << digito2;
     
