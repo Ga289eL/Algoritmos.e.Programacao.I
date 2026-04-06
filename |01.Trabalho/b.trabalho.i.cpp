@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
     int d, d1, d2, d3, d4, d5, d6, d7, d8, d9, digito1, digito2;
-    /*"d" se refere-se ao digito inteiro, o restante seria a separação do "d" numerados conforme as suas posições. digito1 e digito2 sao as variaveis que armazenaram o calculo dos ultimos dois digitos*/
+    /*"d" se refere-se ao digito inteiro, o restante seria a separação do "d" numerados conforme as suas posições. digito1 e digito2 sao as variaveis que armazenarão o calculo dos ultimos dois digitos*/
     
     cout<<"Insira de 8 a 9 digitos do CPF: ";
     cin>>d;
