@@ -9,7 +9,7 @@ using namespace std;
 
 int main(){
   
-  float d, d1, d2;
+  int d, d1, d2;
   
   cout<<"Digite dois números reais: ";
   cin>>d;
