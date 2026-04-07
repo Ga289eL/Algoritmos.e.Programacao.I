@@ -9,14 +9,10 @@ using namespace std;
 
 int main(){
   
-  int d, d1, d2;
+  float d1, d2;
   
   cout<<"Digite dois números reais: ";
-  cin>>d;
-  
-  d1=d%10;
-  d=d/10;
-  d2=d;
+  cin>>d1>>d2;
   
   if(d1==d2){
     cout<<"Eles são iguais";
