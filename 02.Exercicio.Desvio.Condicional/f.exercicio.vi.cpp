@@ -22,7 +22,7 @@ int main(){
     cout<<"Eles são iguais";
   } else if (d1>d2){
     cout<<"O numero maior é: "<<d1;
-  } else {
+  } else{
     cout<<"O numero maior é: "<<d2;
   }
   
