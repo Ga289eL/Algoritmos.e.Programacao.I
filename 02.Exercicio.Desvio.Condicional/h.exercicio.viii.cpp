@@ -18,6 +18,7 @@ int main(){
     } else{
       cout<<"O menor numero é: "n3;
     }
+  }
     
     return 0;
 }
