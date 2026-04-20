@@ -8,6 +8,7 @@
 using namespace std;
 
 int main(){
+    
     int numero;
 
     cout<<"Digite um número inteiro: ";
