@@ -8,19 +8,19 @@
 using namespace std;
 
 int main(){
-    
     int numero;
 
     cout<<"Digite um número inteiro: ";
     cin>>numero;
 
     if(numero!=0){
-      if (numero<0){
-        cout<<"Ele é negativo";
+        if (numero<0){
+            cout<<"Ele é negativo";
         } else{
           cout<<"Ele é positivo";
         }
     } else{ 
         cout<< "Ele é igual a zero";
+    }
     return 0;
 }
