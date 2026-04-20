@@ -15,11 +15,12 @@ int main(){
     cin>>numero;
 
     if(numero!=0){
-      numero<0;
-      cout<<"Ele é negativo";
-    } else{
-      if()
-    }
-    
+      if (numero<0){
+        cout<<"Ele é negativo";
+        } else{
+          cout<<"Ele é positivo";
+        }
+    } else{ 
+        cout<< "Ele é igual a zero";
     return 0;
 }
