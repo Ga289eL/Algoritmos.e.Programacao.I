@@ -9,7 +9,7 @@ int main(){
 
   while(contador<=30){
     cout<<"Não vou colar na prova"<<endl;
-    contador = contador+1;
+    contador+=1;
   }
 
   return 0;
