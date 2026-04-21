@@ -10,22 +10,22 @@ using namespace std;
 
 int main(){
   
-  char nome[35];
-  float nt1, nt2, nt3, media;
+    char nome[35];
+    float nt1, nt2, nt3, media;
 
-  cout<<"Digite seu nome: ";
-  cin>>nome;
+    cout<<"Digite seu nome: ";
+    cin>>nome;
 
-  cout<<"Digite suas três notas: ";
-  cin>>nt1>>nt2>>nt3;
+    cout<<"Digite suas três notas: ";
+    cin>>nt1>>nt2>>nt3;
 
-  media=(nt1+nt2+nt3)/3;
+    media=(nt1+nt2+nt3)/3;
 
-  if(media>=6){
-    cout<<"Você foi aprovado";
-  } else{
-    cout<<"Você foi reprovado";
-  }
+    if(media>=6){
+        cout<<"Você foi aprovado";
+    } else{
+        cout<<"Você foi reprovado";
+    }
 
-  return 0;
+    return 0;
 }
