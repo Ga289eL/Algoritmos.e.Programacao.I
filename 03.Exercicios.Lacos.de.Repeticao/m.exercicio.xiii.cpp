@@ -3,12 +3,22 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    
-    int cont=1, numeros;
+int main () {
 
-    while(cont=<20){
-        cout<<cont;
+    int i, valor, menor;
+
+    for(i=1;i<=20;i++){
+
+        cout<<"Digite o "<<i<<"º valor inteiro: ";
+        cin>>valor;
+
+        if(menor>valor)
+            menor=valor;
+      
     }
-  
+
+    cout<<"O menor valor digitado é "<<menor;
+
+    return 0;
+
 }
