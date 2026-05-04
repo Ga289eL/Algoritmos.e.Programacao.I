@@ -7,7 +7,7 @@ int main () {
 
     int fatorial, numero;
 
-    cout<<"Digite o numero a ser fatordo: ";
+    cout<<"Digite o numero a ser fatorado: ";
     cin>>numero;
 
     for(fatorial=1;numero>1;numero--){
