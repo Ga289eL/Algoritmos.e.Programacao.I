@@ -42,7 +42,7 @@ int main(){
                 int palpite=0, correto=0, incorreto=0;                                              //Variaveis para calcular se o numero sorteado esta correto
                 int p1=0, p2=0, p3=0, p4=0;                                                         //Variaveis para armazenar os numeros individualmente
                     
-                for(tentativas=10;tentativas>0&&correto<4;tentativas--){                                                     //laço para calcular se o numero sorteado foi decifrado ou não
+                for(tentativas=10;tentativas>0&&correto<4;tentativas--){                            //laço para calcular se o numero sorteado foi decifrado ou não
                     do {                                                                            //Saida de informação
                         cout<<"\n\tVocê tem "<<tentativas<<" tentativas\n";                         //Saida de informação
                         cout<<"\t     -- "<<p1<<p2<<p3<<p4<<" --     \n";                           //Saida de informação
