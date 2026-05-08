@@ -91,7 +91,7 @@ int main(){
                 if(correto==4){                                                                     //Desvio para a mensagem que aparecerá caso o jogador acerte os numeros sorteados
                     cin.ignore();                                                                   //Inicio do Pause da menssagem a ser exibida
                     cout<<"\033c\n========================================";                        //Saida de informação
-                    cout<<"\n      🎉 PARABÉNS! VOCÊ VENCEU! 🎉";                                  //Saida de informação
+                    cout<<"\n      🎉  PARABÉNS! VOCÊ VENCEU! 🎉";                                  //Saida de informação
                     cout<<"\n    Você decifrou a sequência: "<<n1<<n2<<n3<<n4;                      //Saida de informação
                     cout<<"\n========================================\n";                           //Saida de informação
                     cout<<"\nPrecione Enter para voltar ao menu principal ";                        //Saida de informação
@@ -101,7 +101,7 @@ int main(){
                 if(tentativas==0){                                                                  //Desvio para a mensagem que aparecerá caso o jogador erre os numeros sorteados
                     cin.ignore();                                                                   //Inicio do Pause da menssagem a ser exibida
                     cout<<"\033c\n+++++++++++++++++++++++++++++++++++++++++";                       //Saida de informação
-                    cout<<"\n    💀 FIM DE JOGO! VOCÊ PERDEU! 💀";                                 //Saida de informação
+                    cout<<"\n    💀  FIM DE JOGO! VOCÊ PERDEU! 💀";                                 //Saida de informação
                     cout<<"\n    A sequência correta era: "<<n1<<n2<<n3<<n4;                        //Saida de informação
                     cout<<"\n+++++++++++++++++++++++++++++++++++++++++\n";                          //Saida de informação
                     cout<<"\nPrecione Enter para voltar ao menu principal ";                        //Saida de informação
