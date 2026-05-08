@@ -89,30 +89,30 @@ int main(){
                 }
                     
                 if(correto==4){                                                                     //Desvio para a mensagem que aparecerá caso o jogador acerte os numeros sorteados
-                    cin.ignore();                                                                   //Inicio do Pause da menssagem a ser exibida
+                    cin.ignore();                                                                   //Inicio do pause da menssagem a ser exibida
                     cout<<"\033c\n========================================";                        //Saida de informação
                     cout<<"\n      🎉  PARABÉNS! VOCÊ VENCEU! 🎉";                                  //Saida de informação
                     cout<<"\n    Você decifrou a sequência: "<<n1<<n2<<n3<<n4;                      //Saida de informação
                     cout<<"\n========================================\n";                           //Saida de informação
                     cout<<"\nPrecione Enter para voltar ao menu principal ";                        //Saida de informação
-                    cin.ignore();                                                                   //Fim do Pause da menssagem a ser exibida
+                    cin.ignore();                                                                   //Fim do pause da menssagem a ser exibida
                 }
                     
                 if(tentativas==0){                                                                  //Desvio para a mensagem que aparecerá caso o jogador erre os numeros sorteados
-                    cin.ignore();                                                                   //Inicio do Pause da menssagem a ser exibida
+                    cin.ignore();                                                                   //Inicio do pause da menssagem a ser exibida
                     cout<<"\033c\n+++++++++++++++++++++++++++++++++++++++++";                       //Saida de informação
                     cout<<"\n    💀  FIM DE JOGO! VOCÊ PERDEU! 💀";                                 //Saida de informação
                     cout<<"\n    A sequência correta era: "<<n1<<n2<<n3<<n4;                        //Saida de informação
                     cout<<"\n+++++++++++++++++++++++++++++++++++++++++\n";                          //Saida de informação
                     cout<<"\nPrecione Enter para voltar ao menu principal ";                        //Saida de informação
-                    cin.ignore();                                                                   //Fim do Pause da menssagem a ser exibida
+                    cin.ignore();                                                                   //Fim do pause da menssagem a ser exibida
                 }
                     
                 break;                                                                              //Fechamento da opção 1
             }
                 
             case '2': case 'S': case's': {                                                          //Abertura da opção 2
-                cin.ignore();                                                                       //Inicio do Pause da menssagem a ser exibida
+                cin.ignore();                                                                       //Inicio do pause da menssagem a ser exibida
                 cout<<"\33c\nVocê selecionou sobre!\n";                                             //Saida de informação
                 cout<<"\33c\n\t***^^~- CRIADORES -~^^***\n";                                        //Saida de informação
                 cout<<"\t    *~ Alison Brito ~*    \n";                                             //Saida de informação
@@ -124,7 +124,7 @@ int main(){
                 cout<<"\t\\§§>>-- PROFESSOR --<<§§/\n";                                             //Saida de informação
                 cout<<"\tRafael Ballottin Martins \n";                                              //Saida de informação
                 cout<<"\nPrecione Enter para voltar ao menu principal ";                            //Saida de informação
-                cin.ignore();                                                                       //Fim do Pause da menssagem a ser exibida
+                cin.ignore();                                                                       //Fim do pause da menssagem a ser exibida
                 break;                                                                              //Fechamento da opção 1
             }
                 
