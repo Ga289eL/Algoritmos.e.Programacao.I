@@ -134,7 +134,7 @@ int main(){
             }
                 
             default:{                                                                               //Caso a opção solicitada não exista
-                cout<<"\nVocê selecionou uma opção inexistente, escolha novamente\n";               //Retorna a lista de opção
+                cout<<"\nVocê selecionou uma opção inexistente, escolha novamente\n";               //Retorna a lista de opções
             }
         }
     }
