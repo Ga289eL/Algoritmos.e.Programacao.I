@@ -28,13 +28,13 @@ int main(){
                 int n1=0, n2=0, n3=0, n4=0;                                                         //Variaveis para definir o numero a decifrar
                     
                 while(n1>6 || n1<1)                                                                 //Laço para delimitar o numero sorteado
-                n1 = rand()%10;                                                                     //Calculo da aleatoriedade do primeiro numero
+                    n1 = rand()%10;                                                                 //Calculo da aleatoriedade do primeiro numero
                 while(n2>6 || n2<1 || n2==n1)                                                       //Laço para delimitar o numero sorteado
-                n2 = rand()%10;                                                                     //Calculo da aleatoriedade do segundo numero
+                    n2 = rand()%10;                                                                 //Calculo da aleatoriedade do segundo numero
                 while(n3>6 || n3<1 || n3==n1 || n3==n2)                                             //Laço para delimitar o numero sorteado
-                n3 = rand()%10;                                                                     //Calculo da aleatoriedade do terceiro numero
+                    n3 = rand()%10;                                                                 //Calculo da aleatoriedade do terceiro numero
                 while(n4>6 || n4<1 || n4==n1 || n4==n2 || n4==n3)                                   //Laço para delimitar o numero sorteado
-                n4 = rand()%10;                                                                     //Calculo da aleatoriedade do quarto numero
+                    n4 = rand()%10;                                                                 //Calculo da aleatoriedade do quarto numero
                     
                 cout<<"\33c";                                                                       //Limpeza de informação
                     
