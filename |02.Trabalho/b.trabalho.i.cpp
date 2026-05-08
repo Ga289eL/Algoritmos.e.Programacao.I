@@ -38,11 +38,11 @@ int main(){
                     
                 cout<<"\33c";                                                                       //Limpeza de informação
                     
-                int tentativas=10;                                                                  //Variavel para delimitar o numero de tentativas
+                int tentativas;                                                                     //Variavel para delimitar o numero de tentativas
                 int palpite=0, correto=0, incorreto=0;                                              //Variaveis para calcular se o numero sorteado esta correto
                 int p1=0, p2=0, p3=0, p4=0;                                                         //Variaveis para armazenar os numeros individualmente
                     
-                while(tentativas>0&&correto<4){                                                     //laço para calcular se o numero sorteado foi decifrado ou não
+                for(tentativas=10;tentativas>0&&correto<4;tentativas--){                                                     //laço para calcular se o numero sorteado foi decifrado ou não
                     do {                                                                            //Saida de informação
                         cout<<"\n\tVocê tem "<<tentativas<<" tentativas\n";                         //Saida de informação
                         cout<<"\t     -- "<<p1<<p2<<p3<<p4<<" --     \n";                           //Saida de informação
@@ -86,8 +86,6 @@ int main(){
                         }
                         
                     } while(p1>6 || p1<1 || p2>6 || p2<1 || p3>6 || p3<1 || p4>6 || p4<1);          //Laço que define se retorna com o mesmo numero de tentativas caso o palpite seja invalido
-                    
-                    tentativas--;                                                                   //Caso o palpite seja valido o numero de tentativas diminui
                 }
                     
                 if(correto==4){                                                                     //Desvio para a mensagem que aparecerá caso o jogador acerte os numeros sorteados
@@ -96,6 +94,8 @@ int main(){
                     cout<<"\n      🎉 PARABÉNS! VOCÊ VENCEU! 🎉";                                   //Saida de informação
                     cout<<"\n    Você decifrou a sequência: "<<n1<<n2<<n3<<n4;                      //Saida de informação
                     cout<<"\n========================================\n";                           //Saida de informação
+                    cout<<"\nPrecione Enter para voltar ao menu principal ";                        //Saida de informação
+                    cin.ignore();                                                                   //Fim do Pause da menssagem a ser exibida
                 }
                     
                 if(tentativas==0){                                                                  //Desvio para a mensagem que aparecerá caso o jogador erre os numeros sorteados
@@ -104,6 +104,8 @@ int main(){
                     cout<<"\n    💀 FIM DE JOGO! VOCÊ PERDEU! 💀";                                  //Saida de informação
                     cout<<"\n    A sequência correta era: "<<n1<<n2<<n3<<n4;                        //Saida de informação
                     cout<<"\n+++++++++++++++++++++++++++++++++++++++++\n";                          //Saida de informação
+                    cout<<"\nPrecione Enter para voltar ao menu principal ";                        //Saida de informação
+                    cin.ignore();                                                                   //Fim do Pause da menssagem a ser exibida
                 }
                     
                 break;                                                                              //Fechamento da opção 1
@@ -121,6 +123,8 @@ int main(){
                 cout<<"\t   --- DATA: 05\\26 ---     \n";                                           //Saida de informação
                 cout<<"\t\\§§>>-- PROFESSOR --<<§§/\n";                                             //Saida de informação
                 cout<<"\tRafael Ballottin Martins \n";                                              //Saida de informação
+                cout<<"\nPrecione Enter para voltar ao menu principal ";                            //Saida de informação
+                cin.ignore();                                                                       //Fim do Pause da menssagem a ser exibida
                 break;                                                                              //Fechamento da opção 1
             }
                 
@@ -133,9 +137,6 @@ int main(){
                 cout<<"\nVocê selecionou uma opção inexistente, escolha novamente\n";               //Retorna a lista de opção
             }
         }
-            
-        cout<<"\nPrecione Enter para voltar ao menu principal ";                                    //Saida de informação
-        cin.ignore();                                                                               //Fim do Pause da menssagem a ser exibida
     }
         
     return 0;                                                                                       //Encerra do codigo
