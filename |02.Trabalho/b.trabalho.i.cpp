@@ -139,5 +139,5 @@ int main(){
         }
     }
         
-    return 0;                                                                                       //Encerra do codigo
+    return 0;                                                                                       //Encerramento do codigo
 }
