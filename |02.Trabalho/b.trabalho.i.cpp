@@ -10,7 +10,7 @@ using namespace std;
 int main(){
     char opcao='0';                                                                                 //Variavel para definir a opção
         
-    while(opcao!='3'&&opcao!='E'&&opcao!='e'){                                                      //laço para retornar ao jogo enquanto a opção 3 não é selecionada
+    while(opcao!='3'&&opcao!='E'&&opcao!='e'){                                                      //Laço para retornar ao jogo enquanto a opção 3 não é selecionada
         cout<<"\33c\n----------------------------------------\n";                                   //Saida de informação
         cout<<"\t###> Mastermind <###\n\n";                                                         //Opção 1
         cout<<"\t   1 - [J]ogar   \n";                                                              //Opção 1
@@ -42,7 +42,7 @@ int main(){
                 int palpite=0, correto=0, incorreto=0;                                              //Variaveis para calcular se o numero sorteado esta correto
                 int p1=0, p2=0, p3=0, p4=0;                                                         //Variaveis para armazenar os numeros individualmente
                     
-                for(tentativas=10;tentativas>0&&correto<4;tentativas--){                            //laço para calcular se o numero sorteado foi decifrado ou não
+                for(tentativas=10;tentativas>0&&correto<4;tentativas--){                            //Laço para calcular se o numero sorteado foi decifrado ou não
                     do {                                                                            //Saida de informação
                         cout<<"\n\tVocê tem "<<tentativas<<" tentativas\n";                         //Saida de informação
                         cout<<"\t     -- "<<p1<<p2<<p3<<p4<<" --     \n";                           //Saida de informação
