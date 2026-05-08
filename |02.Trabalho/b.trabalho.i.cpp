@@ -11,7 +11,7 @@ int main(){
     char opcao='0';                                                                                 //Variavel para definir a opção
         
     while(opcao!='3'&&opcao!='E'&&opcao!='e'){                                                      //Laço para retornar ao jogo enquanto a opção 3 não é selecionada
-        cout<<"\33c\n----------------------------------------\n";                                   //Saida de informação
+        cout<<"\033c\n----------------------------------------\n";                                  //Saida de informação
         cout<<"\t###> Mastermind <###\n\n";                                                         //Opção 1
         cout<<"\t   1 - [J]ogar   \n";                                                              //Opção 1
         cout<<"\t   2 - [S]obre   \n";                                                              //Opção 2
@@ -36,7 +36,7 @@ int main(){
                 while(n4>6 || n4<1 || n4==n1 || n4==n2 || n4==n3)                                   //Laço para delimitar o numero sorteado
                     n4 = rand()%10;                                                                 //Calculo da aleatoriedade do quarto numero
                     
-                cout<<"\33c";                                                                       //Limpeza de informação
+                cout<<"\033c";                                                                      //Limpeza de informação
                     
                 int tentativas;                                                                     //Variavel para delimitar o numero de tentativas
                 int palpite=0, correto=0, incorreto=0;                                              //Variaveis para calcular se o numero sorteado esta correto
@@ -113,8 +113,8 @@ int main(){
                 
             case '2': case 'S': case's': {                                                          //Abertura da opção 2
                 cin.ignore();                                                                       //Inicio do pause da menssagem a ser exibida
-                cout<<"\33c\nVocê selecionou sobre!\n";                                             //Saida de informação
-                cout<<"\33c\n\t***^^~- CRIADORES -~^^***\n";                                        //Saida de informação
+                cout<<"\033c\nVocê selecionou sobre!\n";                                            //Saida de informação
+                cout<<"\033c\n\t***^^~- CRIADORES -~^^***\n";                                       //Saida de informação
                 cout<<"\t    *~ Alison Brito ~*    \n";                                             //Saida de informação
                 cout<<"\t *~ Daniel Rosso Strutz ~* \n";                                            //Saida de informação
                 cout<<"\t*~ Gabriel Alves Jacques ~*\n";                                            //Saida de informação
