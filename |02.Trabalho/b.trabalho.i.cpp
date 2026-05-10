@@ -82,7 +82,7 @@ int main(){
                                 vd4=1;                                                              //Caso esteja a variavel vd4 (verificador do digito) recebe mais 1
                             }
                                 
-                            if(vd1==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                            if(vd1==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
                                 if(d2==0 && p1==n2){                                                //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao segundo numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
@@ -95,7 +95,7 @@ int main(){
                                 }
                             }
                                 
-                            if(vd2==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                            if(vd2==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
                                 if(d1==0 && p2==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao primeiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
@@ -108,7 +108,7 @@ int main(){
                                 }
                             }
                                 
-                            if(vd3==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                            if(vd3==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
                                 if(d1==0 && p3==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao primeiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
@@ -121,7 +121,7 @@ int main(){
                                 }
                             }
                                 
-                            if(vd4==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                            if(vd4==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
                                 if(d1==0 && p4==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao primeiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
