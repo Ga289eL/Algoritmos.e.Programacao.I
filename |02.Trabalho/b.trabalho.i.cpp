@@ -54,30 +54,92 @@ int main(){
                         p3=(palpite/10)%10;                                                         //Calculo para separar o terceiro numero do palpite
                         p4=palpite%10;                                                              //Calculo para separar o quarto numero do palpite
                             
-                        if(p1>6 || p1<1 || p2>6 || p2<1 || p3>6 || p3<1 || p4>6 || p4<1){           //Desvio para verificar se o palpite é invalido
-                            cout<<"\n ??? Palpite inválido! Tente de novo! ??? \n";                 //Saida de informação
-                        } else {                                                                    //Desvio para verificar se o palpite é valido
-                            if(n1==p1)                                                              //Calculo para verificar se o primeiro numero esta no lugar correto
-                                correto++;                                                          //Caso esteja soma 1
-                            if(n2==p2)                                                              //Calculo para verificar se o segundo numero esta no lugar correto
-                                correto++;                                                          //Caso esteja soma 1
-                            if(n3==p3)                                                              //Calculo para verificar se o terceiro numero esta no lugar correto
-                                correto++;                                                          //Caso esteja soma 1
-                            if(n4==p4)                                                              //Calculo para verificar se o quarto numero esta no lugar correto
-                                correto++;                                                          //Caso esteja soma 1
+                        if(p1>0 && p1<7 && p2>0 && p2<7 && p3>0 && p3<7 && p4>0 && p4<7){           //Desvio para verificar se o palpite é valido
+                            int d1=0, d2=0, d3=0, d4=0;                                             //Variaveis para os digitos com valor de 0 ou 1 que representara "false" ou "true"
+                            int vd1=0, vd2=0, vd3=0, vd4=0;                                         //Variaveis para definir se os digitos do palpite preencheram a coluna correta
                                 
-                            if(p1==n2 || p1==n3 || p1==n4)                                          //Calculo para verificar se o primeiro numero esta no lugar incorreto
-                                incorreto++;                                                        //Caso esteja soma 1
-                            if(p2==n1 || p2==n3 || p2==n4)                                          //Calculo para verificar se o segundo numero esta no lugar incorreto
-                                incorreto++;                                                        //Caso esteja soma 1
-                            if(p3==n1 || p3==n2 || p3==n4)                                          //Calculo para verificar se o terceiro numero esta no lugar incorreto
-                                incorreto++;                                                        //Caso esteja soma 1
-                            if(p4==n1 || p4==n2 || p4==n3)                                          //Calculo para verificar se o quarto numero esta no lugar incorreto
-                                incorreto++;                                                        //Caso esteja soma 1
+                            if(p1==n1){                                                             //Desvio para verificar se o palpite do primeiro numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
+                                d1=1;                                                               //Caso esteja a variavel d1 (digito) recebe mais 1
+                                vd1=1;                                                              //Caso esteja a variavel vd1 (verificador do digito) recebe mais 1
+                            }
+                                
+                            if(p2==n2){                                                             //Desvio para verificar se o palpite do segundo numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
+                                d2=1;                                                               //Caso esteja a variavel d2 (digito) recebe mais 1
+                                vd2=1;                                                              //Caso esteja a variavel vd2 (verificador do digito) recebe mais 1
+                            }
+                                
+                            if(p3==n3){                                                             //Desvio para verificar se o palpite do terceiro numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
+                                d3=1;                                                               //Caso esteja a variavel d3 (digito) recebe mais 1
+                                vd3=1;                                                              //Caso esteja a variavel vd3 (verificador do digito) recebe mais 1
+                            }
+                                
+                            if(p4==n4){                                                             //Desvio para verificar se o palpite do primeiro numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
+                                d4=1;                                                               //Caso esteja a variavel d4 (digito) recebe mais 1
+                                vd4=1;                                                              //Caso esteja a variavel vd4 (verificador do digito) recebe mais 1
+                            }
+                                
+                            if(vd1==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                                if(d2==0 && p1==n2){                                                //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao segundo numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
+                                } else if(d3==0 && p1==n3){                                         //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao terceiro numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d3=1;                                                           //Caso seja a variavel d3 (digito) recebe mais 1
+                                } else if(d4==0 && p1==n4){                                         //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao quarto numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d4=1;                                                           //Caso seja a variavel d4 (digito) recebe mais 1
+                                }
+                            }
+                                
+                            if(vd2==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                                if(d1==0 && p2==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao primeiro numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
+                                } else if(d3==0 && p2==n3){                                         //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao terceiro numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d3=1;                                                           //Caso seja a variavel d3 (digito) recebe mais 1
+                                } else if(d4==0 && p2==n4){                                         //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao quarto numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d4=1;                                                           //Caso seja a variavel d4 (digito) recebe mais 1
+                                }
+                            }
+                                
+                            if(vd3==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                                if(d1==0 && p3==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao primeiro numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
+                                } else if(d2==0 && p3==n2){                                         //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao segundo numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
+                                } else if(d4==0 && p3==n4){                                         //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao quarto numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d4=1;                                                           //Caso seja a variavel d4 (digito) recebe mais 1
+                                }
+                            }
+                                
+                            if(vd4==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correta
+                                if(d1==0 && p4==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao primeiro numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
+                                } else if(d2==0 && p4==n2){                                         //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao segundo numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
+                                } else if(d3==0 && p4==n3){                                         //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao terceiro numero da senha
+                                    incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
+                                    d3=1;                                                           //Caso seja a variavel d3 (digito) recebe mais 1
+                                }
+                            }
                                 
                             cout<<endl;                                                             //Quebra de linha
                             cout<<correto<<" Numero(s) certo(s), no(s) lugar(es) correto(s) \n";    //Saida de informação
                             cout<<incorreto<<" Numero(s) certo(s), no(s) lugar(es) incorreto(s) \n";//Saida de informação
+                            
+                        } else {                                                                    //Desvio para verificar se o palpite é invalido
+                            cout<<"\n ??? Palpite inválido! Tente de novo! ??? \n";                 //Saida de informação
                         }
                             
                         if(correto<4){                                                              //Desvio para definir se os numeros acertados estao todos corretos
