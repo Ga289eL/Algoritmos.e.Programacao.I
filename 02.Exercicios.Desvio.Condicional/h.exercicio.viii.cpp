@@ -15,7 +15,7 @@ int main(){
   } else {
     if(n2<n1 && n2<n3){
     cout<<"O menor numero é: "<<n2;
-    } else{
+    } else {
       cout<<"O menor numero é: "<<n3;
     }
   }
