@@ -23,7 +23,7 @@ int main(){
 
     if(media>=6){
         cout<<"Você foi aprovado";
-    } else{
+    } else {
         cout<<"Você foi reprovado";
     }
 
