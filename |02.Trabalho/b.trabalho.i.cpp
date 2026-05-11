@@ -12,10 +12,10 @@ int main(){
         
     while(opcao!='3'&&opcao!='E'&&opcao!='e'){                                                      //Laço para retornar ao jogo enquanto a opção 3 não é selecionada
         cout<<"\033c\n----------------------------------------\n";                                  //Saida de informação
-        cout<<"\t###> Mastermind <###\n\n";                                                         //Opção 1
-        cout<<"\t   1 - [J]ogar   \n";                                                              //Opção 1
-        cout<<"\t   2 - [S]obre   \n";                                                              //Opção 2
-        cout<<"\t   3 - [E]ncerrar   \n";                                                           //Opção 3
+        cout<<"\t###> Mastermind <###\n\n";                                                         //Saida de informação
+        cout<<"\t   1 - [J]ogar   \n";                                                              //Saida de informação
+        cout<<"\t   2 - [S]obre   \n";                                                              //Saida de informação
+        cout<<"\t   3 - [E]ncerrar   \n";                                                           //Saida de informação
         cout<<"----------------------------------------\n";                                         //Saida de informação
         cin>>opcao;                                                                                 //Entrada de informação 
             
@@ -187,12 +187,12 @@ int main(){
                 cout<<"\tRafael Ballottin Martins \n";                                              //Saida de informação
                 cout<<"\nPrecione Enter para voltar ao menu principal ";                            //Saida de informação
                 cin.ignore();                                                                       //Fim do pause da menssagem a ser exibida
-                break;                                                                              //Fechamento da opção 1
+                break;                                                                              //Fechamento da opção 2
             }
                 
             case '3': case 'E': case'e':{                                                           //Abertura da opção 3
                 cout<<"\nVocê selecionou encerrar!";                                                //Saida de informação
-                break;                                                                              //Fechamento da opção 1
+                break;                                                                              //Fechamento da opção 3
             }
                 
             default:{                                                                               //Caso a opção solicitada não exista
