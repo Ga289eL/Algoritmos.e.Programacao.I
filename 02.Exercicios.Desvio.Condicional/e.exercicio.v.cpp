@@ -20,7 +20,7 @@ int main(){
     
     if(hora>=0||hora<=12&&minuto>=0||minuto<=60){
         cout<<"A hora é válida";
-    } else{
+    } else {
         cout<<"A hora é inválida";
     }
     
