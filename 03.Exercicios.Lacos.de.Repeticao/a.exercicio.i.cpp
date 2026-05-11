@@ -5,12 +5,12 @@ using namespace std;
 
 int main(){
 
-  int contador=1;
+    int contador=1;
 
-  while(contador<=30){
-    cout<<"Não vou colar na prova"<<endl;
-    contador+=1;
-  }
+    while(contador<=30){
+        cout<<"Não vou colar na prova"<<endl;
+        contador+=1;
+    }
 
-  return 0;
+    return 0;
 }
