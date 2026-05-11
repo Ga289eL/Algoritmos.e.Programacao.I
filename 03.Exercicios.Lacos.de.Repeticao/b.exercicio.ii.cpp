@@ -5,13 +5,13 @@ using namespace std;
 
 int main(){
 
-  int operador1=1, operador2=5, calculo;
+    int operador1=1, operador2=5, calculo;
 
-  while(operador1<=10){
-    calculo=operador1*operador2;
-    cout<<operador1<<"x"<<operador2<<"="<<calculo<<endl;
-    operador1+=1;
-  }
+    while(operador1<=10){
+        calculo=operador1*operador2;
+        cout<<operador1<<"x"<<operador2<<"="<<calculo<<endl;
+        operador1+=1;
+    }
 
-  return 0;
+    return 0;
 }
