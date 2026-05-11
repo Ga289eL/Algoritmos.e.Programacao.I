@@ -6,22 +6,22 @@ using namespace std;
 
 int main(){
 
-  int base, expoente, resultado, contador=1;
+    int base, expoente, resultado, contador=1;
 
-  cout<<"Digite valores da base e do expoente: ";
-  cin>>base>>expoente;
+    cout<<"Digite valores da base e do expoente: ";
+    cin>>base>>expoente;
 
-  resultado=base;
-  if(base==0){
-    resultado=1;
-  }
+    resultado=base;
+    if(base==0){
+        resultado=1;
+    }
 
-  while(contador<expoente){
-    resultado*=base;
-    contador+=1;
-  }  
+    while(contador<expoente){
+        resultado*=base;
+        contador+=1;
+    }  
 
-  cout<<resultado;
+    cout<<resultado;
   
-  return 0;
+    return 0;
 }
