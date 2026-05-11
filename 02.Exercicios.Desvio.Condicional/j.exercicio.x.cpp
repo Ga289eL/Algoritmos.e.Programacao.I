@@ -18,10 +18,10 @@ int main(){
 
     if(l1==l2&&l2==l3){
         cout<<"O triângulo é equilátero";
-    } else{
+    } else {
         if(l1==l2&&l2!=l3||l2==l3&&l3!=l1||l3==l1&&l1!=l2){
             cout<<"O triângulo é isósceles";
-        } else{
+        } else {
             cout<<"O triângulo é escaleno";
         }
     }
