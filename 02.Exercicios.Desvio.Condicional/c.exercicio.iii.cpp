@@ -14,10 +14,9 @@ int main(){
     cout<<"Digite a Letra: ";
     cin>>letra;
     
-    if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u' ||
-       letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U'){
+    if(letra=='a' || letra=='e' || letra=='i' || letra =='o' || letra=='u' || letra=='A' || letra=='E' || letra=='I' || letra=='O' || letra=='U'){
         cout<<"É uma vogal";
-    } else{
+    } else {
         cout<<"Não é uma vogal";
     }
     
