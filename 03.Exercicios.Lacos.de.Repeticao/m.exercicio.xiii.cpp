@@ -14,7 +14,6 @@ int main () {
 
         if(menor>valor)
             menor=valor;
-      
     }
 
     cout<<"O menor valor digitado é "<<menor;
