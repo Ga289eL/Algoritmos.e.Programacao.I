@@ -6,13 +6,13 @@ using namespace std;
 
 int main(){
 
-  int numero=100, soma=0;
+    int numero=100, soma=0;
 
-  while(numero<=200){
-    soma+=numero;
-    cout<<"soma = "<<soma<<endl;
-    numero+=1;
-  }
+    while(numero<=200){
+        soma+=numero;
+        cout<<"soma = "<<soma<<endl;
+        numero+=1;
+    }
 
-  return 0;
+    return 0;
 }
