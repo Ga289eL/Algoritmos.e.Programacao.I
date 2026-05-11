@@ -56,79 +56,62 @@ int main(){
                             
                         if(p1>0 && p1<7 && p2>0 && p2<7 && p3>0 && p3<7 && p4>0 && p4<7){           //Desvio para verificar se o palpite é valido
                             int d1=0, d2=0, d3=0, d4=0;                                             //Variaveis para os digitos com valor de 0 ou 1 que representara "false" ou "true"
-                            int vd1=0, vd2=0, vd3=0, vd4=0;                                         //Variaveis para definir se os digitos do palpite preencheram a coluna correta
                                 
-                            if(p1==n1){                                                             //Desvio para verificar se o palpite do primeiro numero esta correto
+                            if(p1==n1)                                                              //Desvio para verificar se o palpite do primeiro numero esta correto
                                 correto++;                                                          //Caso esteja a variavel correto recebe mais 1
-                                d1=1;                                                               //Caso esteja a variavel d1 (digito) recebe mais 1
-                                vd1=1;                                                              //Caso esteja a variavel vd1 (verificador do digito) recebe mais 1
-                            }
-                                
-                            if(p2==n2){                                                             //Desvio para verificar se o palpite do segundo numero esta correto
-                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
-                                d2=1;                                                               //Caso esteja a variavel d2 (digito) recebe mais 1
-                                vd2=1;                                                              //Caso esteja a variavel vd2 (verificador do digito) recebe mais 1
-                            }
-                                
-                            if(p3==n3){                                                             //Desvio para verificar se o palpite do terceiro numero esta correto
-                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
-                                d3=1;                                                               //Caso esteja a variavel d3 (digito) recebe mais 1
-                                vd3=1;                                                              //Caso esteja a variavel vd3 (verificador do digito) recebe mais 1
-                            }
-                                
-                            if(p4==n4){                                                             //Desvio para verificar se o palpite do primeiro numero esta correto
-                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
-                                d4=1;                                                               //Caso esteja a variavel d4 (digito) recebe mais 1
-                                vd4=1;                                                              //Caso esteja a variavel vd4 (verificador do digito) recebe mais 1
-                            }
-                                
-                            if(vd1==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
-                                if(d2==0 && p1==n2){                                                //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao segundo numero da senha
+                            else {
+                                if(d2==0 && p1==n2 && p2!=n2){                                      //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao segundo numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
-                                } else if(d3==0 && p1==n3){                                         //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao terceiro numero da senha
+                                } else if(d3==0 && p1==n3 && p3!=n3){                               //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao terceiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d3=1;                                                           //Caso seja a variavel d3 (digito) recebe mais 1
-                                } else if(d4==0 && p1==n4){                                         //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao quarto numero da senha
+                                } else if(d4==0 && p1==n4 && p4!=n4){                               //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o primeiro numero do palpite for igual ao quarto numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d4=1;                                                           //Caso seja a variavel d4 (digito) recebe mais 1
                                 }
                             }
-                                
-                            if(vd2==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
-                                if(d1==0 && p2==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao primeiro numero da senha
+                                    
+                            if(p2==n2)                                                              //Desvio para verificar se o palpite do segundo numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
+                            else {
+                                if(d1==0 && p2==n1 && p1!=n1){                                      //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao primeiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
-                                } else if(d3==0 && p2==n3){                                         //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao terceiro numero da senha
+                                } else if(d3==0 && p2==n3 && p3!=n3){                               //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao terceiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d3=1;                                                           //Caso seja a variavel d3 (digito) recebe mais 1
-                                } else if(d4==0 && p2==n4){                                         //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao quarto numero da senha
+                                } else if(d4==0 && p2==n4 && p4!=n4){                               //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o segundo numero do palpite for igual ao quarto numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d4=1;                                                           //Caso seja a variavel d4 (digito) recebe mais 1
                                 }
                             }
-                                
-                            if(vd3==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
-                                if(d1==0 && p3==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao primeiro numero da senha
+                                    
+                            if(p3==n3)                                                              //Desvio para verificar se o palpite do terceiro numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 
+                            else {
+                                if(d1==0 && p3==n1 && p1!=n1){                                      //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao primeiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
-                                } else if(d2==0 && p3==n2){                                         //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao segundo numero da senha
+                                } else if(d2==0 && p3==n2 && p2!=n2){                               //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao segundo numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
-                                } else if(d4==0 && p3==n4){                                         //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao quarto numero da senha
+                                } else if(d4==0 && p3==n4 && p4!=n4){                               //Desvio caso o quarto digito do palpite nao tenha valor (in)correto mas o terceiro numero do palpite for igual ao quarto numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d4=1;                                                           //Caso seja a variavel d4 (digito) recebe mais 1
                                 }
                             }
-                                
-                            if(vd4==0){                                                             //Desvio caso o verificador do primeiro digito nao esteja correto
-                                if(d1==0 && p4==n1){                                                //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao primeiro numero da senha
+                                    
+                            if(p4==n4)                                                              //Desvio para verificar se o palpite do primeiro numero esta correto
+                                correto++;                                                          //Caso esteja a variavel correto recebe mais 1
+                            else { 
+                                if(d1==0 && p4==n1 && p1!=n1){                                      //Desvio caso o primeiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao primeiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d1=1;                                                           //Caso seja a variavel d1 (digito) recebe mais 1
-                                } else if(d2==0 && p4==n2){                                         //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao segundo numero da senha
+                                } else if(d2==0 && p4==n2 && p2!=n2){                               //Desvio caso o segundo digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao segundo numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d2=1;                                                           //Caso seja a variavel d2 (digito) recebe mais 1
-                                } else if(d3==0 && p4==n3){                                         //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao terceiro numero da senha
+                                } else if(d3==0 && p4==n3 && p3!=n3){                               //Desvio caso o terceiro digito do palpite nao tenha valor (in)correto mas o quarto numero do palpite for igual ao terceiro numero da senha
                                     incorreto++;                                                    //Caso seja a variavel incorreto recebe mais 1
                                     d3=1;                                                           //Caso seja a variavel d3 (digito) recebe mais 1
                                 }
