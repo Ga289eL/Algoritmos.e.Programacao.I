@@ -5,12 +5,12 @@ using namespace std;
 
 int main(){
 
-  int contador=50;
+    int contador=50;
 
-  while(contador<=200){
-    cout<<contador<<endl;
-    contador+=1;
-  }
+    while(contador<=200){
+        cout<<contador<<endl;
+        contador+=1;
+    }
 
-  return 0;
+    return 0;
 }
