@@ -11,7 +11,7 @@ int main () {
     cin>>numero;
 
     for(fatorial=1;numero>1;numero--){
-      fatorial*=numero;
+            fatorial*=numero;
     }
 
     cout<<"o fatorial do numero digitado é "<<fatorial;
