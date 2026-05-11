@@ -17,8 +17,7 @@ int main (){
         S = S + 1.0/i;
     }
 
-    cout<< S << endl;
+    cout<<S<<endl;
 
     return 0;
-
 }
