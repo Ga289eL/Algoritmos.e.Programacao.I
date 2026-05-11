@@ -101,8 +101,8 @@ int main(){
                             cout<<correto<<" Numero(s) certo(s), no(s) lugar(es) correto(s) \n";    //Saida de informação
                             cout<<incorreto<<" Numero(s) certo(s), no(s) lugar(es) incorreto(s) \n";//Saida de informação
                             
-                            vitoria=correto                                                         //Variavel vitoria recebe o valor da variavel correto, caso vitoria tenha o valor 4 o jogador ganha
-                            derrota=tentativas                                                      //Variavel derrota recebe o valor da variavel tentativas, caso derrota tenha o valor 0 o jogador perde
+                            vitoria=correto;                                                        //Variavel vitoria recebe o valor da variavel correto, caso vitoria tenha o valor 4 o jogador ganha
+                            derrota=tentativas;                                                     //Variavel derrota recebe o valor da variavel tentativas, caso derrota tenha o valor 0 o jogador perde
                             
                         } else {                                                                    //Desvio para verificar se o palpite é invalido
                             cout<<"\n ??? Palpite inválido! Tente de novo! ??? \n";                 //Saida de informação
