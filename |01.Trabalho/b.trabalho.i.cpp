@@ -18,13 +18,13 @@ int main() {
     }
     
     d9=d%10;                                                                                        //Calculo para separar o nono numero do cpf
-    d8=(d/10)%10;                                                                                  //Calculo para separar o oitavo numero do cpf
-    d7=(d/100)%10;                                                                                 //Calculo para separar o setimo numero do cpf
-    d6=(d/1000)%10;                                                                                //Calculo para separar o sexto numero do cpf
-    d5=(d/10000)%10;                                                                               //Calculo para separar o quinto numero do cpf
-    d4=(d/100000)%10;                                                                              //Calculo para separar o quarto numero do cpf
-    d3=(d/1000000)%10;                                                                             //Calculo para separar o terceiro numero do cpf
-    d2=(d/10000000)%10;                                                                            //Calculo para separar o segundo numero do cpf
+    d8=(d/10)%10;                                                                                   //Calculo para separar o oitavo numero do cpf
+    d7=(d/100)%10;                                                                                  //Calculo para separar o setimo numero do cpf
+    d6=(d/1000)%10;                                                                                 //Calculo para separar o sexto numero do cpf
+    d5=(d/10000)%10;                                                                                //Calculo para separar o quinto numero do cpf
+    d4=(d/100000)%10;                                                                               //Calculo para separar o quarto numero do cpf
+    d3=(d/1000000)%10;                                                                              //Calculo para separar o terceiro numero do cpf
+    d2=(d/10000000)%10;                                                                             //Calculo para separar o segundo numero do cpf
     d1=d/100000000;                                                                                 //Calculo para separar o primeiro numero do cpf
     
     d=(d1*10+d2*9+d3*8+d4*7+d5*6+d6*5+d7*4+d8*3+d9*2)%11;                                           //Calculo para descobrir o resuldado do penultimo digito do cpf
