@@ -16,7 +16,7 @@ int main(){
     
     if(numero%2==0){
         cout<<"O número é par";
-    } else{
+    } else {
         cout<<"O número é impar";
     }
     
