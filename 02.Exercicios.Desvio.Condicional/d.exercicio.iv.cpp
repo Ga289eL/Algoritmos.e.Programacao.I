@@ -19,7 +19,7 @@ int main(){
     if(matual<mnasci||matual==mnasci&&datual<dnasci){
         idade=idade-1;
         cout<<"Você tem "<<idade<<" anos";
-    } else{
+    } else {
         cout<<"Você tem "<<idade<<" anos";
     }
     
