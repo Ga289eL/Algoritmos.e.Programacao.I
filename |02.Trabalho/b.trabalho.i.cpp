@@ -81,7 +81,7 @@ int main(){
                                     acertos=correto;                                                            //Calculo para o numero de acertos
                                     
                                 } else {                                                                    //Desvio caso o palpite tenha numeros repetidos
-                                    cout<<"\n         Não repita numeros!         \n";                          //Saida de informação
+                                    cout<<"\n        Não repita os numeros!        \n";                          //Saida de informação
                                 }
                             } else {                                                                    //Desvio caso o palpite não tenha numeros validos
                                 cout<<"\n ??? Palpite inválido! Tente de novo! ??? \n";                     //Saida de informação
