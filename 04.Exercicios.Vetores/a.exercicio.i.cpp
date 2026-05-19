@@ -12,9 +12,7 @@ int main(){
     for(int i=0; i<T; i++){
         cout<<"\nDigite o valor: ";
         cin>>vet[i];
-    }
-    
-    for(int i=0; i<T; i++){
+        
         soma+=vet[i];
         
         if(vet[i]>max)
