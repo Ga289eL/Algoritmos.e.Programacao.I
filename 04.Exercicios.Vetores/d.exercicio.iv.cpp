@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-#define T 5
+#define T 10
 
 int main(){
     int vet[T];
