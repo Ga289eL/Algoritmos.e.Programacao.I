@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-#define T 5
+#define T 20
 
 int main(){
     int a[T], b[T], c[T];
