@@ -8,22 +8,18 @@ using namespace std;
 int main(){
     int a[T], b[T], c[T];
 
-    cout << "Preencha o vetor A...\n";
-    for (int i=0; i<T; i++){
-        cout << "Digite um numero: ";
-        cin >> a[i];
+    for(int i=0;i<T;i++){
+        cout<<"\nDigite o valor de A: ";
+        cin>>a[i];
+        
+        cout<<"\nDigite o valor de B: ";
+        cin>>b[i];
     }
     
-    cout << "\nAgora, preencha o vetor B...\n";
-    for (int i=0; i<T; i++){
-        cout << "Digite um numero: ";
-        cin >> b[i];
-    }
-    
-    cout << "Valores resultantes: |";
-    for (int i=0; i<T; i++){
-        c[i] = a[i]-b[i];
-        cout << c[i] << "|";
+    cout<<"Valores resultantes: | ";
+    for(int i=0;i<T;i++){
+        c[i]=a[i]-b[i];
+        cout<<c[i]<<" | ";
     }
 
     return 0;
