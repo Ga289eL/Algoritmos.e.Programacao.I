@@ -18,7 +18,7 @@ int main(){
     menor=vetor[0];
     maior=vetor[0];
     
-    for(int i=1; i<T; i++){
+    for(int i=0; i<T; i++){
         if(vetor[i]<menor)
             menor=vetor[i];
         if(vetor[i]>maior)
