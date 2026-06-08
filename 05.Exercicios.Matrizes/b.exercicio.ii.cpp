@@ -15,9 +15,9 @@ int main(){
     
     for(int i=0;i<L;i++){
         for(int j=0;j<C;j++)
-            cout<<"\t"<<mat[i][j]<<"\t";
+            cout<<" "<<mat[i][j]<<"\t";
             
-        cout<<"\t\n";
+        cout<<endl<<endl;
     }
     
     return 0;
