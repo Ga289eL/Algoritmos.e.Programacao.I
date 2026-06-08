@@ -1,4 +1,4 @@
-//Faça um programa que preencha uma matriz de 5X5 com o elemento um em todas as posições em que o índice de linha tem valor igual ao da coluna.
+//Faça um programa que preencha uma matriz de 5X5 com o elemento um em todas as posições.
 
 #include <iostream>
 using namespace std;
