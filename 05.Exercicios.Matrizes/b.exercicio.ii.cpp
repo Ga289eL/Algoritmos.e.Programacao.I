@@ -17,7 +17,7 @@ int main(){
         for(int j=0;j<C;j++)
             cout<<" "<<mat[i][j]<<"\t";
             
-        cout<<endl<<endl;
+        cout<<"\n\n";
     }
     
     return 0;
