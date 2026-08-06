@@ -8,47 +8,47 @@ using namespace std;
 #include <stdlib.h>
 
 int main(){
-    char opcao='0';                                                             //Variavel para gerar as opçãos
+    char opcao='0'; //Variavel para gerar as opçãos
         
-    while(opcao!='3'&&opcao!='E'&&opcao!='e'){                                  //Laço para retornar ao jogo enquanto a 'opção 3' não é selecionada
-        cout<<"\033c\n----------------------------------------\n";                  //Saida de informação
-        cout<<"\t###> Mastermind <###\n\n";                                         //Saida de informação
-        cout<<"\t   1 - [J]ogar   \n";                                              //Saida de informação
-        cout<<"\t   2 - [S]obre   \n";                                              //Saida de informação
-        cout<<"\t   3 - [E]ncerrar   \n";                                           //Saida de informação
-        cout<<"----------------------------------------\n";                         //Saida de informação
-        cin>>opcao;                                                                 //Entrada de informação
+    while(opcao!='3'&&opcao!='E'&&opcao!='e'){ //Laço para retornar ao jogo enquanto a 'opção 3' não é selecionada
+        cout<<"\033c\n----------------------------------------\n";
+        cout<<"\t###> Mastermind <###\n\n";
+        cout<<"\t   1 - [J]ogar   \n";
+        cout<<"\t   2 - [S]obre   \n";
+        cout<<"\t   3 - [E]ncerrar   \n";
+        cout<<"----------------------------------------\n";
+        cin>>opcao;
             
-        int acertos=0;                                                              //Variavel que descobre quantos numeros acertados
-        int n1=0, n2=0, n3=0, n4=0;                                                 //Variaveis para definir os numeros sorteados 
-        int p1=0, p2=0, p3=0, p4=0;                                                 //Variaveis para separar os numeros do palpite
+        int acertos=0; //Variavel que descobre quantos numeros acertados
+        int n1=0, n2=0, n3=0, n4=0; //Variaveis para definir os numeros sorteados 
+        int p1=0, p2=0, p3=0, p4=0; //Variaveis para separar os numeros do palpite
             
-        switch(opcao){                                                              //Gerador das 3 opções
-            case '1': case 'J': case'j':                                                //Abertura da 'opção 1'
-                cout<<"\033c\nVocê selecionou jogar!\n";                                    //Saida de informação
+        switch(opcao){
+            case '1': case 'J': case'j':
+                cout<<"\033c\nVocê selecionou jogar!\n";
                     
-                srand(time(NULL));                                                          //Gerador de numero aleatorio
+                srand(time(NULL)); //Gerador de numero aleatorio
                     
-                while(n1>6 || n1<1)                                                         //Laço para delimitar o numero sorteado
-                    n1 = rand()%10;                                                             //Calculo da aleatoriedade do primeiro numero
-                while(n2>6 || n2<1 || n2==n1)                                               //Laço para delimitar o numero sorteado
-                    n2 = rand()%10;                                                             //Calculo da aleatoriedade do segundo numero
-                while(n3>6 || n3<1 || n3==n1 || n3==n2)                                     //Laço para delimitar o numero sorteado
-                    n3 = rand()%10;                                                             //Calculo da aleatoriedade do terceiro numero
-                while(n4>6 || n4<1 || n4==n1 || n4==n2 || n4==n3)                           //Laço para delimitar o numero sorteado
-                    n4 = rand()%10;                                                             //Calculo da aleatoriedade do quarto numero
+                while(n1>6 || n1<1) //Laços para delimitar os numeros sorteados
+                    n1 = rand()%10
+                while(n2>6 || n2<1 || n2==n1)
+                    n2 = rand()%10;
+                while(n3>6 || n3<1 || n3==n1 || n3==n2)
+                    n3 = rand()%10;
+                while(n4>6 || n4<1 || n4==n1 || n4==n2 || n4==n3)
+                    n4 = rand()%10;
                     
-                cout<<"\033c";                                                              //Limpeza de informação
+                cout<<"\033c";
                     
-                for(int tentativas=10;tentativas>0&&acertos<4;tentativas--){                //Laço para calcular se o numero sorteado foi decifrado ou não
+                for(int tentativas=10;tentativas>0&&acertos<4;tentativas--){ //Laço para calcular se o numero sorteado foi decifrado ou não
                     do{                                                                         //laço para verificar se o palpite tem numeros repetidos
                         do {                                                                        //Laço para verificar o palpite tem numeros validos
                             int palpite=0, correto=0, incorreto=0;                                      //Variaveis para verificar o palpite, caso erre o palpite iguala a 0 em cada repetição
                                 
-                            cout<<"\n\tVocê tem "<<tentativas<<" tentativas\n";                         //Saida de informação
-                            cout<<"\t     -- "<<p1<<p2<<p3<<p4<<" --     \n";                           //Saida de informação
-                            cout<<"Dê um palpite entre 1 a 6 (4 digitos): ";                            //Saida de informação
-                            cin>>palpite;                                                               //Entrada de informação
+                            cout<<"\n\tVocê tem "<<tentativas<<" tentativas\n";
+                            cout<<"\t     -- "<<p1<<p2<<p3<<p4<<" --     \n";
+                            cout<<"Dê um palpite entre 1 a 6 (4 digitos): ";
+                            cin>>palpite;
                                 
                             p1=palpite/1000;                                                            //Calculo para separar o primeiro numero do palpite
                             p2=(palpite/100)%10;                                                        //Calculo para separar o segundo numero do palpite
