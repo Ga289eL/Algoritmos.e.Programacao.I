@@ -6,9 +6,9 @@
 using namespace std;
 
 int main() {
-    int d;                                  //Variavel que receberá o valor do cpf até os 9 primeiros digitos
+    int d; //Variavel que receberá o valor do cpf até os 9 primeiros digitos
     int d1, d2, d3, d4, d5, d6, d7, d8, d9; //Variaveis para armazenar cada um dos 9 digitos individuais
-    int digito1, digito2;                   //Variaveis para o calclos dos ultimos dois digitos do cpf
+    int digito1, digito2; //Variaveis para o calclos dos ultimos dois digitos do cpf
     
     cout<<"Insira de 8 a 9 digitos do CPF: ";
     cin>>d;
