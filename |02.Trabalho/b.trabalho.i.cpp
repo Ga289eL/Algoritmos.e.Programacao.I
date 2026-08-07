@@ -40,10 +40,10 @@ int main(){
                     
                 cout<<"\033c";
                     
-                for(int tentativas=10;tentativas>0&&acertos<4;tentativas--){ //Laço para calcular se o numero sorteado foi decifrado ou não
+                for(int tentativas=10;tentativas>0&&acertos<4;tentativas--){ //Laço para calcular se o numero sorteado foi decifrado
                     do { //Laço para verificar se o palpite tem numeros repetidos
                         do { //Laço para verificar o palpite tem numeros validos
-                            int palpite=0, correto=0, incorreto=0; //Variaveis para verificar o palpite, caso erre o palpite iguala a 0 em cada repetição
+                            int palpite=0, correto=0, incorreto=0; //Variaveis para verificar o palpite, caso erre, o palpite iguala a 0 em cada repetição
                                 
                             cout<<"\n\tVocê tem "<<tentativas<<" tentativas\n";
                             cout<<"\t     -- "<<p1<<p2<<p3<<p4<<" --     \n";
