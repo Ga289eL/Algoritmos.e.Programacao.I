@@ -21,10 +21,10 @@ int main(){
     cout<<"Media é igual a "<<media;
     
     for(int i=0;i<T;i++){
-		    if(nota[i]>media){
-            acima++;
-		        cout<<"\n-> " <<nota[i];
-		    }
+		if(nota[i]>media){
+        acima++;
+		cout<<"\n-> " <<nota[i];
+		}
     }
 	
     cout<<"\nAlunos acima da media: "<<acima;
